@@ -1,5 +1,7 @@
 package pickacard;
 
+import java.util.Random;
+
 /**
  * A class that models playing card Objects. Cards have 
  * a value (note that Ace = 1, Jack -11, Queen =12, King = 13)
@@ -12,13 +14,27 @@ package pickacard;
  */
 public class Card {
 
-   private String suit; //clubs, spades, diamonds, hearts
+    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
 
-   public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+   public static final String [] Suit = {"Hearts", "Diamonds", "Spades", "Clubs"};
     /**
      * @return the suit
      */
+     Random r = new Random();
+     
+   //  random value and suit 
+    public int randomValue()
+    {
+      int v = r.nextInt(13)+1;
+      return v;
+    }
+      public int randomSuit()
+      {
+        int s = r.nextInt(4);
+        return s;
+      }     
+     
     public String getSuit() {
         return suit;
     }
