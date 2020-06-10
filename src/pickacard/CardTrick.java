@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author srinivsi
  * @modifier AlTAHER Al-Dulaimi 
- * Student ID - 991550689
+ *  ID - 991550689
  */
 public class CardTrick {
 
