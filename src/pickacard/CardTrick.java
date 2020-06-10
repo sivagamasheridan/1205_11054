@@ -7,7 +7,7 @@ package pickacard;
  *
  * @author srinivsi
  * @author Paul Bonenfant
- * @modifier 
+ * @modifier Alqassam Firwana
  * @ID 991606962
  */
 import java.util.Scanner;
