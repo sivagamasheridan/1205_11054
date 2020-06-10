@@ -7,7 +7,7 @@ package pickacard;
  * There are 52 cards in a deck, no jokers.
  * This code is to be used in ICE1. When you create your own branch,
  * @modifier Altaher Al-Dulaimi
- * Student ID - 991550689
+ *  ID - 991550689
  */
 public class Card {
 
