@@ -7,7 +7,7 @@ package pickacard;
  *
  * @author srinivsi
  * @author Paul Bonenfant
- * @modifier Alqassam Firwana
+ * @modifier 
  * @ID 991606962
  */
 import java.util.Scanner;
@@ -26,7 +26,7 @@ public class CardTrick {
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             c.setSuit(Card.SUITS[c.randomSuit()]);
             magicHand[i] = c;//saving object in array
-            System.out.println(c.getValue() + " " + c.getSuit());
+            System.out.println( c.getSuit() + " " + c.getValue());
         }
 
         //insert code to ask the user for Card value and suit, create their card

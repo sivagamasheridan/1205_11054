@@ -8,7 +8,7 @@ package pickacard;
  *
  * @author dancye modifier sivagama
  * @author Paul Bonenfant
- * @modifier Alqassam Firwana
+ * @modifier 
  * @ID 991606962
  */
 import java.util.Random;
