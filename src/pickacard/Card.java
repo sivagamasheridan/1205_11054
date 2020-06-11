@@ -6,8 +6,9 @@ package pickacard;
  * A suit (clubs, hearts, spades, diamonds).
  * There are 52 cards in a deck, no jokers.
  * This code is to be used in ICE1. When you create your own branch,
- * @modifier Pratyancha Patil
- * ID - 991591887
+ * add your name as a modifier.
+ * @author dancye modifier sivagama
+ * @author Paul Bonenfant
  */
 public class Card {
 
