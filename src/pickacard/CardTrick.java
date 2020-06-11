@@ -7,6 +7,7 @@ import java.util.Scanner;
  * @author srinivsi
  * @author Paul Bonenfant
  * @modifier Jay Patel
+ * Student Id: 991592044
  */
 public class CardTrick {
 
