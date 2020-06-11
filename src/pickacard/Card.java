@@ -10,6 +10,7 @@ package pickacard;
  * @author dancye modifier sivagama
  * @author Paul Bonenfant
  * @modifier Kushagra Rajdev
+ * STUDENT ID 991592180
  */
 public class Card {
 
