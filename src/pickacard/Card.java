@@ -11,6 +11,8 @@ import java.util.Random;
  * add your name as a modifier.
  * @author dancye modifier sivagama
  * @author Paul Bonenfant
+ *@author Gurveer Singh
+ *991588362
  */
 public class Card {
 
