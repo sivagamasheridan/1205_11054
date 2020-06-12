@@ -1,5 +1,5 @@
 package pickacard;
-
+import java.util.Scanner;
 /**
  * A class that models playing card Objects. Cards have 
  * a value (note that Ace = 1, Jack -11, Queen =12, King = 13)
@@ -43,7 +43,16 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
-   
-   
     
+    public int cardValue () {
+        
+        int cardVal= (int) (1* Math.random()+ 13);
+        return cardVal;
+    }
+   public int cardSuit (){
+    
+       int cardSuit= (int)(Math.random()*4);
+     return cardSuit;
+    
+}
 }
