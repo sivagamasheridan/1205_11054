@@ -46,7 +46,7 @@ Scanner input = new Scanner(System.in);
             }
             else
             {
-                System.out.println("You win!");
+                System.out.println("You win!");//win
             }
 
         
