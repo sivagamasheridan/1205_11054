@@ -6,22 +6,44 @@ package pickacard;
  *
  * @author srinivsi
  * @author Paul Bonenfant
+ * @modifier Mehakdeep kaur
+ * student id=991591857
  */
+import java.util.Scanner;
+
+
 public class CardTrick {
 
     public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
         
-        Card[] magicHand = new Card[7];
-
+        Card[] magicHand = new Card[7];//new object for card created
+        //c.setValue(insert call to random number generator here)
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
-            //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            c.setValue((int)(Math.random()*13)+1);
+            c.setSuit(Card.SUITS[(int)((Math.random()*3)+1)]);
+            magicHand[i]=c;
+            System.out.println(c.getValue()+" "+c.getSuit());
         }
 
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
+        System.out.println("Enter a Card Value Between 1 and 13.");
+        int val1 = input.nextInt();
+        System.out.println("Enter a Card Suit(diamond,spade,heart,club)");
+        String luckyCard = input.next();
+        
+        boolean output = false;
+        for(int j=0; j<magicHand.length; j++){
+            if(val1 == magicHand[j].getValue() && luckyCard.equalsIgnoreCase(magicHand[j].getSuit()))
+            {   System.out.println("Great,You Win");
+                output=true;
+            }
+        }
+        
+        if(output==false){
+            System.out.println("oops,you loose");
+        }
     }
 
 }
