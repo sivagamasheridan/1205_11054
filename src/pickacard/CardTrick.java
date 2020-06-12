@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  * @author srinivsi
  * @author Paul Bonenfant
- * @author Onisha
+ * @modifier Onisha Edwards 991422700
  */
 public class CardTrick {
 
