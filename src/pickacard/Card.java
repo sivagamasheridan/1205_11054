@@ -9,9 +9,11 @@ package pickacard;
  * add your name as a modifier.
  * @author dancye modifier sivagama
  * @author Paul Bonenfant
+ * @author Megha Bhagat
+ * 991594562
  */
 public class Card {
-
+    
    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
 
@@ -19,7 +21,7 @@ public class Card {
     /**
      * @return the suit
      */
-    public String getSuit() {
+       public String getSuit() {  
         return suit;
     }
 
