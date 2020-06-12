@@ -70,4 +70,4 @@ public class Card {
         
     }
 }
-git branch -D branch_ellie
+$ git push <ellieeEAs> --delete <ellie>
