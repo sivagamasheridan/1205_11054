@@ -6,6 +6,8 @@ package pickacard;
  *
  * @author srinivsi
  * @author Paul Bonenfant
+ *@author HIMANSHI HIMANSHI
+ *STUDENT ID 991592167
  */
 public class CardTrick {
 
@@ -38,7 +40,7 @@ Scanner input = new Scanner(System.in);
            if(compare==false)
             {
                 System.out.println("no card found");
-                System.out.println("Defeated!");
+                System.out.println("Defeated!");//loose
             }
             else
             {
