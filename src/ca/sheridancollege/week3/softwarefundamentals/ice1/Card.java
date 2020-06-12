@@ -3,6 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+//Ellie Asadi
+//Student Number: 991458861
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 
 import java.util.Random;
