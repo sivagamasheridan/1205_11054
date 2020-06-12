@@ -4,7 +4,9 @@ package pickacard;
  * A class that fills a magic hand of 7 cards with random Card Objects and then asks the user to pick a card and
  * searches the array of cards for the match to the user's card. To be used as starting code in ICE 1
  *
+ *playing a card game
  * @author Gursimrat kaur
+ * @version 1.0
  */
 import java.util.Random;
 import java.util.Scanner;
