@@ -8,6 +8,7 @@ import java.util.Scanner;
  * @author Paul Bonenfant
  * @author Megha Bhagat
  * 991594562
+ * arya
  */
 public class CardTrick {
 
