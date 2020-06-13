@@ -8,6 +8,7 @@ import java.util.Scanner;
  *
  * @author srinivsi
  * @author Paul Bonenfant
+ * @author Onisha
  */
 public class CardTrick {
 
@@ -15,6 +16,7 @@ public class CardTrick {
         Scanner input = new Scanner (System.in);
         
         Card[] magicHand = new Card[7];
+       
 
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
@@ -24,10 +26,9 @@ public class CardTrick {
             c.setValue(c.cardValue());
             
             
-            c=magicHand[i];
+            magicHand[i]=c;
            
-           System.out.println(c.getSuit() + c.getValue());
-          
+           System.out.println(c.getSuit() + "\t" + c.getValue());          
         }
         
       System.out.println("Enter one of the four suits");
@@ -35,19 +36,23 @@ public class CardTrick {
        
        System.out.println("Enter a card number");
        int number=input.nextInt();
-       
+      
        for (int i = 0; i < magicHand.length; i++) {
            
-           if()
+           if(deck.equals(magicHand[i].getSuit()) && number==magicHand[i].getValue()){
+             System.out.println("Your card is a match");
+              break;
+           }else{
+               System.out.println("Your card is not a match");
+             
+           }
        }
        
        
        
     }
     
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
+       
     }
 
 

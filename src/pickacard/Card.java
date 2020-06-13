@@ -46,7 +46,7 @@ public class Card {
     
     public int cardValue () {
         
-        int cardVal= (int) (1* Math.random()+ 13);
+        int cardVal= (int) ( Math.random()* 13);
         return cardVal;
     }
    public int cardSuit (){
