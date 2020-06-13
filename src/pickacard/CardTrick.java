@@ -8,6 +8,7 @@ import java.util.Scanner;
  *
  * @author srinivsi
  * @author Paul Bonenfant
+ * Arshdeep Singh | 991595511 | Modification #Github !
  */
 public class CardTrick {
 
