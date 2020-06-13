@@ -1,49 +1,55 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package pickacard;
 
 /**
- * A class that models playing card Objects. Cards have 
- * a value (note that Ace = 1, Jack -11, Queen =12, King = 13)
- * A suit (clubs, hearts, spades, diamonds).
- * There are 52 cards in a deck, no jokers.
- * This code is to be used in ICE1. When you create your own branch,
- * add your name as a modifier.
- * @author dancye modifier sivagama
- * @author Paul Bonenfant
+ *
+ * @author srinivsi
+  *
+ 
+ private variable then refactor it
+ * - encapsulate fields (encapsulation principle) 
+ getter/setters
  */
-public class Card {
-
-   private String suit; //clubs, spades, diamonds, hearts
-   private int value;//1-13
-
-   public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
-    /**
-     * @return the suit
-     */
-    public String getSuit() {
+public class Card 
+{
+  private String suit;//diamonds,clubs,spades, hearts
+  private int value; // 1 to 13
+public static final String[] SUITS={"diamonds","clubs","spades","hearts"};
+    
+    public String getSuit()
+    {
         return suit;
     }
 
-    /**
-     * @param suit the suit to set
-     */
-    public void setSuit(String suit) {
-        this.suit = suit;
+    
+    public void setSuit(int num) 
+    {
+        this.suit = SUITS[num];
     }
-
-    /**
-     * @return the value
-     */
-    public int getValue() {
+    
+    public int randomSuit()
+    {
+        return (int)(Math.random()*4);
+    }
+    
+    public int getValue() 
+    {
         return value;
     }
 
-    /**
-     * @param value the value to set
-     */
-    public void setValue(int value) {
+    
+    public void setValue(int value) 
+    {
         this.value = value;
     }
+    public int randomValue()
+    {
+       return (int)(Math.random()*(13)+1);
+       
+   }
    
-   
-    
 }
