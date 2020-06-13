@@ -8,6 +8,8 @@ import java.util.Scanner;
  *
  * @author srinivsi
  * @author Paul Bonenfant
+ * @ modifier Manish | 991590295
+
  */
 public class CardTrick {
 
