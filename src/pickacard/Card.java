@@ -14,7 +14,9 @@ public class Card {
 
    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
-
+   
+   CardTrick rand =new CardTrick();
+   
    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
     /**
      * @return the suit
@@ -44,6 +46,22 @@ public class Card {
         this.value = value;
     }
    
-   
+// Here I have inserted two mthos to generate random values of number and suit here
+    
+    public int randNum()
+    {
+        int num;
+       num = (rand.nextInt(13)+1);
+        return num;
+    }
+    public int randSuitCard()
+    {
+        int suitcardSelect = rand.nextInt(4);
+        return suitcardSelect;
+    }
+
+    void setSuit(int suitNumber) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
