@@ -11,7 +11,11 @@ import java.util.Random;
  * add your name as a modifier.
  * @author dancye modifier sivagama
  * @author Paul Bonenfant
+ *@modifier Akashdeep singh
+ *Student ID=991588121
  */
+ 
+ 
 public class Card {
 
    private String suit; //clubs, spades, diamonds, hearts
