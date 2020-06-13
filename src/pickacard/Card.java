@@ -1,5 +1,7 @@
 package pickacard;
 
+import java.util.Random;
+
 /**
  * A class that models playing card Objects. Cards have 
  * a value (note that Ace = 1, Jack -11, Queen =12, King = 13)
@@ -43,7 +45,19 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
+   Random number= new Random();
    
-   
-    
-}
+   public int randomvalue(){
+       int val=number.nextInt(13)+1;
+       return val;
+   }
+       public int randomsuit()
+       {
+           int ransuit =number.nextInt(13)+1;
+           return ransuit;
+       }
+       
+   }
+
+
+
