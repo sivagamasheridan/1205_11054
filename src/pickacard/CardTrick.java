@@ -8,48 +8,47 @@ import java.util.Scanner;
  *
  * @author srinivsi
  * @author Paul Bonenfant
+ * @modifier manreen manreen
+ * student id: 991587428
  */
 public class CardTrick {
 
-    public static void main(String[] args) {
-        
+          public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
+        //Scanner object 
         Card[] magicHand = new Card[7];
-
-        for (int i = 0; i < magicHand.length; i++) {
+        //array list
+        for (int i=0; i<magicHand.length; i++)
+        {
             Card c = new Card();
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
-         c.setValue(((int)Math.random()*13)+1);
-            c.setSuit(Card.SUITS[(int)Math.random()*4]);
-            magicHand[i] = c;
-        
+            c.setValue((int)(Math.random()*13+1));
+            c.setSuit(Card.SUITS[(int)(Math.random()*4)]);
+            magicHand[i]=c;
+            System.out.println(c.getValue()+" "+c.getSuit());
         }
-
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
-    Scanner k = new Scanner(System.in);
-        System.out.println("enter any 652 card value");
-        int value = k.nextInt();
-        System.out.println("choose suit value");
-        String suit = k.next();
-        for(int sub = 0;sub<magicHand.length;sub++)
+        System.out.println("Enter Suit");
+        String s = input.next();
+        //user input suit
+        System.out.println("Enter value");
+        int value = input.nextInt();
+        //user input value
+        boolean is = true;
+        //return value
+        for (Card magicHand1 : magicHand)
         {
-            if(value == magicHand[sub].getValue())
+            if (value == magicHand1.getValue() && s.equalsIgnoreCase(magicHand1.getSuit()))
             {
-           if(suit.equalsIgnoreCase(magicHand[sub].getSuit()))
-           {
-                 System.out.println("card found");
-           }}
-               else
-               System.out.println("card not found");  
-               
-            
-        
+                System.out.println("Your Card is in the list");
+                is = false;
+            }
         }
-            
-        
-        
-    }
+        if (is == true)
+        {
+            System.out.println("Your Card is not in the list");
+        }
+}
 
 }

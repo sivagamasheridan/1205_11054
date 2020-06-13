@@ -9,6 +9,8 @@ package pickacard;
  * add your name as a modifier.
  * @author dancye modifier sivagama
  * @author Paul Bonenfant
+ * @modifier manreen manreen
+ * student id:991587428
  */
 public class Card {
 
