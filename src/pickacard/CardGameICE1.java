@@ -1,16 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Modifier: Ankeet Singh Wason 
+ * Student ID: 991585255
  */
 package pickacard;
 
 import java.util.Scanner;
-
-/**
- *
- * @author Your wasonan <wasonan.sheridancollege.ca>
- */
 public class CardGameICE1 {
     public static void main(String[] args) {
         // code to generate 7 random cards and store in array
