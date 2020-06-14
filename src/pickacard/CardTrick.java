@@ -7,49 +7,40 @@ import java.util.Scanner;
  * searches the array of cards for the match to the user's card. To be used as starting code in ICE 1
  *
  * @author srinivsi
- * @author Beant Kaur
- */
+* @ author Jay Rajeshbhai Patel 
+*/
+
 public class CardTrick {
 
     public static void main(String[] args) {
         
+        
+        boolean position=true;
         Card[] magicHand = new Card[7];
-
+        
+        Scanner input = new Scanner(System.in);
+        
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
             //c.setValue(insert call to random number generator here)
+            c.setValue(c.randNum());
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
-         c.setValue(((int)Math.random()*13)+1);
-            c.setSuit(Card.SUITS[(int)Math.random()*4]);
-            magicHand[i] = c;
+
         
         }
-
+            if ( position == true) 
+            {
+                System.out.println("::Card is in Array::");
+            }
+            else
+            {
+                System.out.println("::Card is not in Array::");
+            }
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
-    Scanner k = new Scanner(System.in);
-        System.out.println("enter any 652 card value");
-        int value = k.nextInt();
-        System.out.println("choose suit value");
-        String suit = k.next();
-        for(int sub = 0;sub<magicHand.length;sub++)
-        {
-            if(value == magicHand[sub].getValue())
-            {
-           if(suit.equalsIgnoreCase(magicHand[sub].getSuit()))
-           {
-                 System.out.println("card found");
-           }}
-               else
-               System.out.println("card not found");  
-               
-            
-        
-        }
-            
-        
-        
+
     }
 
+    
 }
