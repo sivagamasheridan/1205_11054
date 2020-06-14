@@ -13,9 +13,8 @@ import java.util.Scanner;
  */
 public class CardTrick {
     
-    public static void main(String[] args)
-    {
-        
+    public static void main(String[] args) {
+        // code to generate 7 random cards and store in array
         Card[] magicHand = new Card[7];//array of object
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();//object
