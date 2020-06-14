@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
-
+import java.util.Scanner;
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects
  * and then asks the user to pick a card and searches the array of cards
@@ -15,18 +15,38 @@ public class CardTrick {
     
     public static void main(String[] args)
     {
-        Card[] magicHand = new Card[7];
         
-        for (int i=0; i<magicHand.length; i++)
-        {
-            Card c = new Card();
-            //c.setValue(insert call to random number generator here)
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+        Card[] magicHand = new Card[7];//array of object
+        for (int i = 0; i < magicHand.length; i++) {
+            Card c = new Card();//object
+            c.setSuits(Card.SUITS[c.randomSuit()]);
+            c.setValue(c.randomValue());
+            magicHand[i] = c;//saving object in array
+            System.out.println(c.getSuits() + " " + c.getValue());
         }
-        
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here to find matching card is in array or not
-        //Then report the result here
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your Suits: ");
+        String a = input.nextLine();
+        System.out.println("Enter the value of Suits:");
+        int n = input.nextInt();
+
+        Card usercard = new Card();
+
+        usercard.setValue(n);
+        usercard.setSuits(a);
+
+        int count = 0;
+
+        for (Card magicHand1 : magicHand) {
+            if (usercard.getSuits().equalsIgnoreCase(magicHand1.getSuits()) && usercard.getValue() == magicHand1.getValue()) {
+                count = 1;
+                System.out.println("You card is in MagicHand");
+                break;
+            } else {
+                System.out.println("Losing hand");
+                break;
+            }
+        }
     }
-    
 }
