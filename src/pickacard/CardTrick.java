@@ -7,39 +7,40 @@ import java.util.Scanner;
  * searches the array of cards for the match to the user's card. To be used as starting code in ICE 1
  *
  * @author srinivsi
-* @ author Jay Rajeshbhai Patel 
+* @ author Jay Rajeshbhai Patel
+* @modifier Jasmine Kaur
+* Student ID
 */
 
 public class CardTrick {
 
     public static void main(String[] args) {
-        
-        
-        boolean position=true;
-        Card[] magicHand = new Card[7];
-        
         Scanner input = new Scanner(System.in);
         
-        for (int i = 0; i < magicHand.length; i++) {
-            Card c = new Card();
-            //c.setValue(insert call to random number generator here)
-            c.setValue(c.randNum());
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
-
+        Card[] magicHand = new Card[7];
         
+        for (int i = 0; i < magicHand.length; i++){
+            Card c = new Card();
+            c.setValue((int)(Math.random()*13+1));
+            c.setSuit(Card.SUITS[(int)(Math.random()*4)]);
+            magicHand[i] = c;
+            System.out.println(c.getValue() + " " + c.getSuit());
         }
-            if ( position == true) 
-            {
-                System.out.println("::Card is in Array::");
+        System.out.println("Enter Suit");
+        String s = input.next();
+        System.out.println("Enter Value");
+        int value = input.nextInt();
+        
+        boolean is = true;
+        for (Card magicHand1 : magicHand) {
+            if(value == magicHand1.getValue() && s.equalsIgnoreCase(magicHand1.getSuit())){
+                System.out.println("Your card is in the list");
+                is = false;
+            } else {
             }
-            else
-            {
-                System.out.println("::Card is not in Array::");
-            }
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
-
+        }
+        if (is == true)
+            System.out.println("Your card is not in the list");
     }
 
     
