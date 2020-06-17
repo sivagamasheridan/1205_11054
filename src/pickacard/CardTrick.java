@@ -12,29 +12,41 @@ import java.util.Scanner;
 
 public class CardTrick {
 
-    public static void main(String[] args) {
-        
-        
-        boolean position=true;
+         public static void main(String[] args)
+    {
+        Scanner input=new Scanner(System.in);
         Card[] magicHand = new Card[7];
-        
-        Scanner input = new Scanner(System.in);
-        
-        for (int i = 0; i < magicHand.length; i++) {
+        //card object created
+        for (int i=0; i<magicHand.length; i++)
+        {
             Card c = new Card();
-            //c.setValue(insert call to random number generator here)
-            c.setValue(c.randNum());
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
-
-        
+            c.setValue((int)(Math.random()*13+1));
+            c.setSuit(Card.SUITS[(int)(Math.random()*4)]);
+            magicHand[i]=c;
+            System.out.println(c.getValue()+" "+c.getSuit());
+//printing statement
         }
-            if ( position == true) 
+        System.out.println("Enter Suit");
+        String s = input.next();
+        System.out.println("Enter value");
+        int value = input.nextInt();
+        boolean is = true;
+//for statement
+        for (Card magicHand1 : magicHand)
+        {
+//if else statement
+            if (value == magicHand1.getValue() && s.equalsIgnoreCase(magicHand1.getSuit()))
             {
-                System.out.println("::Card is in Array::");
+                System.out.println("Your Card is in the list");
+                is = false;
             }
-            else
-            {
-                System.out.println("::Card is not in Array::");
+        }
+        if (is == true)
+        {
+            System.out.println("Your Card is not in the list");
+        }
+}
+
             }
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
